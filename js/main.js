@@ -401,7 +401,7 @@ var options = {
     opacity: 1
   },
   legend: {
-    show: true,
+    show: false,
     position: 'top',
     horizontalAlign: 'center',
     offsetX: 20,
