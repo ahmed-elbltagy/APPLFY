@@ -692,7 +692,6 @@ main .section-1 .cards .box .bx3{
 }
 main .section-1 .cards .box .bx1 :nth-child(1){
   transform: rotate(80deg);
-  /* font-size: 20px; */
   color: var(--main-color);
   background-color: #6f00ff23;
   border-radius: 50%;
@@ -708,7 +707,6 @@ main .section-1 .cards .box .bx1 :nth-child(2){
 }
 main .section-1 .cards .box .bx2 :nth-child(1){
   transform: rotate(80deg);
-  /* font-size: 20px; */
   background-color:#f0b1052b;
   border-radius: 50%;
   padding: 3px;
@@ -720,7 +718,6 @@ main .section-1 .cards .box .bx2 :nth-child(2){
 }
 main .section-1 .cards .box .bx3 :nth-child(1){
   transform: rotate(180deg);
-  /* font-size: 20px; */
   background-color:#ff784725;
   border-radius: 50%;
   padding: 3px;
