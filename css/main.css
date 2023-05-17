@@ -1,6 +1,4 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 /*  Start Global Values */
 *{
   -webkit-box-sizing: border-box;
@@ -245,6 +243,8 @@ body aside .upgrade{
 body aside .upgrade img{
   border-radius: 5px 5px 0px 0px;
   object-fit: cover;
+  width: 140px;
+  height: 100px;
 }
 body aside .upgrade p{
   height: 38px;
