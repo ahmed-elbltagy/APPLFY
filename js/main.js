@@ -402,7 +402,7 @@ var options = {
   },
   legend: {
     show: false,
-    position: 'top',
+    position: 'bottom',
     horizontalAlign: 'center',
     offsetX: 20,
   }

@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /*  Start Global Values */
 *{
   -webkit-box-sizing: border-box;
@@ -9,6 +12,7 @@
   text-decoration: none;
   outline: none;
   border: none;
+  /* font-family: 'Poppins', sans-seri; */
 }
 /* Start Custom  scrollbar  */
 ::-webkit-scrollbar {
@@ -78,14 +82,14 @@
   --green-color:  #37cd9d;
   --trnsper-color:#9b8cd9;
   --toggle-color: #d3d9df ;
-  --hed-color: #282828; 
+  --hed-color:   #2c2c2c; 
+  --input-color: #000; 
   --tex-color: #6c5395; 
   --bg-color-s:#f0f2f9;
   --bg-color-p:#ffffff;
   --scrollbar-color-p: #e3e7f6;
   --scrollbar-color-s: #c7c2f1;
   --scrollbar-color-h: #bcb4f7;
-  --input-color:#8181d542;
   --main-border:1.3px solid #8181d542;
   --box-shadow-1:0px 0px 20px -6px  #b1b1b1af;
   --box-shadow-2:0px 4px 10px -5px  #a3a3a3af;
@@ -101,6 +105,7 @@
   --scrollbar-color-p: #3b3e56;
   --scrollbar-color-s: #7f7ff55b;
   --scrollbar-color-h: #6e6efd5b;
+  --input-color:#fff;
   --box-shadow-1:0px 1px 25px -15px #d5d5d500;
   --box-shadow-2:0px 9px 16px  -4px #ededed00;
   --box-shadow-3:0px 9px 16px  -4px #4f4f4f00;
@@ -239,6 +244,7 @@ body aside .upgrade{
 }
 body aside .upgrade img{
   border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
 }
 body aside .upgrade p{
   height: 38px;
@@ -304,6 +310,11 @@ body main{
 }
 
 /* Start style for public elements */
+.title img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
 main ul{
   position: absolute;
   background-color: var(--bg-color-p);
@@ -484,15 +495,15 @@ main .section-1 header .search{
   box-shadow: var(--box-shadow-2);
 }
 main .section-1 header .search input{
-  color: var(--tex-color);
+  color: var(--input-color);
   border-radius:0px 5px 5px 0px;
   height: 100%;
-  background-color:var(--input-color);
+  background-color:#8080ee68;
   padding: 0 10px;
   width: 238px;
 }
 main .section-1 header .search input[type="search"]::placeholder{
-  color:var(--tex-color);
+  color:var(--input-color);
   padding-left:5px !important;
 }
 main .section-1 header .search i{
@@ -671,36 +682,53 @@ main .section-1 .cards .box .content .data :nth-child(3){
   align-items: center;
   margin-top: 3px;
 }
-main .section-1 .cards .box .bx1 span{
-  transform: rotate(80deg);
-  margin-top: -5px;
-  font-size: 20px;
-  background-color: #6f00ff37;
-  border-radius: 50%;
-  padding: 2px;
-  margin-right: 4px;
+main .section-1 .cards .box .bx1,
+main .section-1 .cards .box .bx2,
+main .section-1 .cards .box .bx3{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
 }
-main .section-1 .cards .box .bx2 span{
+main .section-1 .cards .box .bx1 :nth-child(1){
   transform: rotate(80deg);
-  margin-top: -5px;
-  font-size: 20px;
-  background-color:#f2b30537;
+  /* font-size: 20px; */
+  color: var(--main-color);
+  background-color: #6f00ff23;
   border-radius: 50%;
-  padding: 2px;
-  margin-right: 4px;
+  padding: 3px;
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
 }
-main .section-1 .cards .box .bx3 span{
+main .section-1 .cards .box .bx1 :nth-child(2){
+  color: var(--main-color);
+  font-weight: 500;
+}
+main .section-1 .cards .box .bx2 :nth-child(1){
+  transform: rotate(80deg);
+  /* font-size: 20px; */
+  background-color:#f0b1052b;
+  border-radius: 50%;
+  padding: 3px;
+  color: var(--yellow-color);
+}
+main .section-1 .cards .box .bx2 :nth-child(2){
+  color: var(--yellow-color);
+  font-weight: 500;
+}
+main .section-1 .cards .box .bx3 :nth-child(1){
   transform: rotate(180deg);
-  margin-top: -5px;
-  font-size: 20px;
-  background-color:#ff784737;
+  /* font-size: 20px; */
+  background-color:#ff784725;
   border-radius: 50%;
-  padding: 2px;
-  margin-right: 4px;
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
+  padding: 3px;
+  color: var(--braun-color);
+}
+main .section-1 .cards .box .bx3 :nth-child(2){
+  color: var(--braun-color);
+  font-weight: 500;
 }
 main .section-1 .cards .box .ico{
   user-select: none;
@@ -1019,6 +1047,7 @@ main .profile span {
 }
 main .profile img{
   border-radius: 50%;
+  object-fit: cover;
 }
 main .location{
   margin: 40px 0;
@@ -1030,23 +1059,24 @@ main .location{
 main .location .img{
   width: 180px !important;
   height: 180px;
-  margin:25px 0;
+  margin:20px 0;
 } 
 main .location .img img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 
   border: var(--main-border);
 }
 main .location :nth-child(2){
-  font-weight: 500;
+  font-weight: 600;
   color: var(--hed-color);
-  font-size: 15px;
+  font-size: 17px;
 }
 main .location :nth-child(3){
   font-size: 14px;
-  color: var(--trnsper-color);
+  color: var(--input-color);
 }
 main .location :nth-child(4){
   display: flex;
@@ -1086,8 +1116,8 @@ main .posted button span{
   font-size: 15px;
 }
 main .posted .add :nth-child(2){
-  background-color: var(--input-color);
-  color: var(--hed-color);
+  background-color:var(--scrollbar-color-h);
+  color: var(--input-color);
   border-radius: 3px;
   transition: .4px;
 }
@@ -1120,7 +1150,7 @@ main .section-2 .togglee .box-1,
 main .section-2 .togglee .box-2{
   border-radius: 10px;
   padding:20px 13px;
-  color: #ffff;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
