@@ -10,7 +10,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  /* font-family: 'Poppins', sans-seri; */
 }
 /* Start Custom  scrollbar  */
 ::-webkit-scrollbar {
@@ -115,7 +114,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
-  font-family: 'Poppins', sans-seri;
+  font-family:'Poppins', sans-serif;
   display: flex;
   caret-color: var(--main-color);
   background-color: var(--bg-color-s);
@@ -360,6 +359,11 @@ main .user .profile{
   align-items: center;
   gap: 10px;
   color: var(--hed-color);
+}
+main .user img{
+  width: 42px;
+  height:42px ;
+  border-radius: 50%;
 }
 main .user ul{
   top: 36px;
@@ -696,17 +700,13 @@ main .section-1 .cards .box .bx1 :nth-child(1){
   background-color: #6f00ff23;
   border-radius: 50%;
   padding: 3px;
-  -webkit-transform: rotate(80deg);
-  -moz-transform: rotate(80deg);
-  -ms-transform: rotate(80deg);
-  -o-transform: rotate(80deg);
 }
 main .section-1 .cards .box .bx1 :nth-child(2){
   color: var(--main-color);
   font-weight: 500;
 }
 main .section-1 .cards .box .bx2 :nth-child(1){
-  transform: rotate(80deg);
+  /* transform: rotate(80deg); */
   background-color:#f0b1052b;
   border-radius: 50%;
   padding: 3px;
@@ -718,6 +718,7 @@ main .section-1 .cards .box .bx2 :nth-child(2){
 }
 main .section-1 .cards .box .bx3 :nth-child(1){
   transform: rotate(180deg);
+  /* font-size: 20px; */
   background-color:#ff784725;
   border-radius: 50%;
   padding: 3px;
