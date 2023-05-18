@@ -1,3 +1,4 @@
+
 // global variable
 const windowHeight = window.innerHeight; 
 
@@ -533,4 +534,4 @@ var observerr2 = new IntersectionObserver(function (entries, observerr2) {
     }
   });
 }, options);
-observerr2.observe(target);
+observerr2.observe( target );
