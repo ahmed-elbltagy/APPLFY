@@ -333,23 +333,28 @@ main ul{
 .show-list{
   display: block !important;
 }
-main  ul li{
+main ul li{
   padding: 9px ;
   cursor: pointer;
   transition: .1s;
 }
-main  ul li:hover{
+main ul li:hover{
   background-color: var(--bg-color-s);
 }
 main  ul li:not(:last-child){
   border-bottom:var(--main-border);
 }
-main  ul  i{
+main ul i{
   position: absolute; 
   top: -8%;
   right: 13%;
   font-size: 20px !important;
   color: var(--bg-color-s);
+}
+@media(max-width:460px){
+  main .row-1 .bar ul{
+    margin-top: 8px !important;
+  }
 }
 main .user .profile{
   width: fit-content;
