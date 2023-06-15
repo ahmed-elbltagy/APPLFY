@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 /*  Start Global Values */
 *{
   -webkit-box-sizing: border-box;
@@ -92,6 +94,7 @@
   --box-shadow-3:0px 2px 15px -10px #a3a3a3af;
   --box-shadow-4:0px 5px 15px  0px  #523f6933;
   --box-shadow-5:1px 1px 15px  0px  #8483851e , -1px -1px 15px  0px #523f6933;
+  --caret-color:#6e00ff;
   }
 .dark{
   --hed-color:   #efefef; 
@@ -107,15 +110,13 @@
   --box-shadow-3:0px 9px 16px  -4px #4f4f4f00;
   --box-shadow-4:4px 5px 8px   -5px #564869;
   --box-shadow-5:4px 4px 15px  0px  #523f6933 , -4px -4px 15px  0px #523f6933;
+  --caret-color:#fff
 }
 /* End variables */
-html{
-  scroll-behavior: smooth;
-}
 body{
   font-family:'Poppins', sans-serif;
   display: flex;
-  caret-color: var(--main-color);
+  caret-color: var(--caret-color);
   background-color: var(--bg-color-s);
   overflow-x: hidden;
 }
@@ -376,6 +377,7 @@ main .user ul{
 main .user ul i{
   right: 10% !important;
 }
+
 .toggle-switch {
   position: relative;
   display: inline-block;
@@ -413,6 +415,9 @@ left:73%;
 }
 .apexcharts-toolbar{
   color:#1e1e2c !important;
+}
+.active-button{
+  color: var(--main-color)!important;
 }
 /* End style for public elements */
 
@@ -807,6 +812,7 @@ main .section-1 .row-2 :nth-child(1) .title i{
 }
 .rotate{
   transform: rotate(-180deg)!important;
+  color: var(--main-color);
   -webkit-transform: rotate(-180deg)!important;
   -moz-transform: rotate(-180deg)!important;
   -ms-transform: rotate(-180deg)!important;

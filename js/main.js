@@ -117,14 +117,14 @@ menuEls.forEach((menue) => {
   const button = menue.querySelector("button");
   const content = menue.querySelector(".list");
     button.addEventListener("click", () => {
-    button.classList. toggle("active-span");
+    button.classList.toggle("active-button");
     content.classList.toggle("show-list");
     content.classList.remove( "hidden-list" );
 // hidden drop-down-menu when clicked on any place in page
     window.addEventListener('mouseup', function (event) {
     if (event.target != button && event.target.parentNode != button) {
       content.classList.remove("show-list");
-      button.classList.remove("active-span");
+      button.classList.remove("active-button");
     }
   });
 });
@@ -157,7 +157,7 @@ menu.forEach((menu) => {
   const buttonn = menu.querySelector(".ico");
   const contentt = menu.querySelector(".list");
     buttonn.addEventListener("click", () => {
-    buttonn.classList. toggle("active-span");
+    buttonn.classList. toggle("active-buttonn");
     buttonn.classList. toggle("rotate");
     contentt.classList.toggle("show-list");
     contentt.classList.remove( "hidden-list" );
@@ -409,7 +409,6 @@ var options = {
   }
 };
 
-var chart1 = new ApexCharts(document.querySelector("#chart1"), options);
 var chart1 = new ApexCharts(document.querySelector("#chart1"), options);
 var target = document.querySelector( "#chart1" );
 var options = {
