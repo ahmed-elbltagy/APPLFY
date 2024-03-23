@@ -83,7 +83,7 @@ html{
   --hed-color:   #2c2c2c; 
   --input-color: #000; 
   --tex-color: #6c5395; 
-  --bg-color-s:#f0f2f9;
+  --bg-color-s:#dadae1;
   --bg-color-p:#ffffff;
   --scrollbar-color-p: #e3e7f6;
   --scrollbar-color-s: #c7c2f1;
@@ -164,6 +164,7 @@ body aside{
   position:sticky;
   top: 0px;
   box-shadow:var(--box-shadow-1);
+  transition:left .4s;
 }
 .show{
   left: 0 !important;
@@ -235,8 +236,7 @@ body aside ul li a:hover:not(.active){
   background-color: var(--bg-color-s);
 }
 body aside .upgrade{
-  margin: 0 auto;
-  margin-top: 5% !important;
+  margin: -50px auto;
 }
 body aside .upgrade img{
   border-radius: 5px 5px 0px 0px;
@@ -289,8 +289,18 @@ body aside .upgrade p a:hover{
   body aside ul li{
     margin: 3px 0px;
   }
-  body aside .upgrade{
-    margin-top: 6px !important;
+body aside .upgrade{
+    margin-top: 80px !important;
+  }
+  body aside .upgrade p{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  body aside .upgrade img{
+    display: none;
   }
 }
 body main{
