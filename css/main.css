@@ -83,7 +83,7 @@ html{
   --hed-color:   #2c2c2c; 
   --input-color: #000; 
   --tex-color: #6c5395; 
-  --bg-color-s:#dadae1;
+  --bg-color-s:#d7d6d882;
   --bg-color-p:#ffffff;
   --scrollbar-color-p: #e3e7f6;
   --scrollbar-color-s: #c7c2f1;
@@ -1096,8 +1096,7 @@ main .location .img img{
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-
-  border: var(--main-border);
+  border: 1px solid #8c8a8a !important;
 }
 main .location :nth-child(2){
   font-weight: 600;
