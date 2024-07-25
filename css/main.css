@@ -1093,7 +1093,8 @@ main .location .img img{
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #8c8a8a !important;
+
+  border: var(--main-border);
 }
 main .location :nth-child(2){
   font-weight: 600;
