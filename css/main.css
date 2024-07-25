@@ -83,7 +83,7 @@ html{
   --hed-color:   #2c2c2c; 
   --input-color: #000; 
   --tex-color: #6c5395; 
-  --bg-color-s:#d7d6d882;
+  --bg-color-s:#f0f2f9;
   --bg-color-p:#ffffff;
   --scrollbar-color-p: #e3e7f6;
   --scrollbar-color-s: #c7c2f1;
@@ -194,9 +194,6 @@ body aside ul{
 body aside ul li {
   margin-bottom: 7px;
 }
-/* body aside ul li span{
-  transition:.01s;
-} */
 body aside ul li a{
   display: flex;
   align-items: center;
